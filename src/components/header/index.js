@@ -4,11 +4,12 @@ import Link from "next/link";
 import Logo from "../../assets/logo.svg";
 import LogoCodeboost from "../../assets/logo-codeboost.svg";
 import { HeaderStyle } from "./styles";
+import { Container } from "../../styles/global";
 
 export function Header() {
     return (
         <HeaderStyle>
-            <div>
+            <Container>
                 <div className="logo" >
                     <Link href="/">
                         <Image
@@ -23,7 +24,7 @@ export function Header() {
                         alt="Logo Codeboost"
                     />
                 </div>
-            </div>
+            </Container>
         </HeaderStyle>
     )
 }
