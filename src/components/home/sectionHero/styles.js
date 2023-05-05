@@ -63,6 +63,42 @@ export const ContentText = styled("div", {
     ".left": {
         flex: 1,
         maxWidth: 574,
-        paddingBottom: "10.1rem"
+        paddingBottom: "10.1rem",
+        h3: {
+            fontWeight: 700,
+            fontSize: "14px",
+            lineHeight: "21px",
+            letterSacing: "0.095em",
+            color: "#FFA800",
+            marginBottom: 8,
+        },
+        h1: {
+            fontWeighteight: 600,
+            fontSize: "6.1rem",
+            lineHeight: "7.1rem",
+            color: "#FFFFFF",
+        },
+        p: {
+            fontWeight: 400,
+            fontSize: "16px",
+            lineHeight: "24px",
+            color: "$gray200",
+            maxWidth: 490,
+            marginBottom: 32,
+        },
+        a: {
+            display: "inline-block",
+            padding: "15px 52px",
+            backgroundColor: "$red900",
+            borderRadius: 5,
+            fontWeight: 600,
+            fontSize: "1.6rem",
+            lineHight: "2.4rem",
+            color: "$white",
+            transition: "filter .3s ease",
+            "&:hover": {
+                filter: "brightness(0.8)",
+            }
+        },
     },
 })

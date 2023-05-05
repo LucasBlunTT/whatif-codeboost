@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { SectionHeroStyle, AreaSocial, ContentText } from "./styles";
 import { Container } from "../../../styles/global";
 
@@ -38,8 +39,8 @@ export function SectionHero() {
                 <ContentText>
                     <div className="left">
                         <h3>COMING SON</h3>
-                        <h1>Lorem ipsum dolor sit amet, elit consectetur</h1>
-                        <p>Maecenas tristique eu quam sed pretium. Pellentesque sagittis elit et porttitor consequat. Nam augue turpis, tincidunt commodo lacus at, auctor suscipit ex</p>
+                        <h1>Marvel's WHAT IF... ?</h1>
+                        <p>Disponível no Disney+, What If… ? é uma série de animação que leva o público para um terreno desconhecido ao contar, de forma alternativa, momentos cruciais do Universo Cinematográfico Marvel, imaginando o que teria acontecido aos super-heróis se a história fosse totalmente diferente e se passasse em outra realidade.</p>
                         <a href="http://" target="_blank" rel="noopener noreferrer">
                             Saiba mais
                         </a>
