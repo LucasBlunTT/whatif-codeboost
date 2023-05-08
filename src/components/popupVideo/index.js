@@ -10,8 +10,6 @@ export function PopupVideo() {
             <button>
                 <div>
                     <Image src={IconPlay} alt="Icon Play" />
-
-
                 </div>
             </button>
         </StylePopupVideo>
