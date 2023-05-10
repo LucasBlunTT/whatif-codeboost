@@ -9,7 +9,7 @@ const characters = [
     {
         name: "Killmonger",
         image: ImageCharacter,
-        slug: "/killmonger",
+        slug: "killmonger",
     }
 ]
 
