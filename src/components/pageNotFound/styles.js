@@ -3,9 +3,10 @@ import { Container } from '../../styles/global';
 
 export const StylePageNotFound = styled("section", {
     marginTop: 96,
-    paddingTop: 95,
-    paddingBottom: 150,
+
     [`${Container}`]: {
+        paddingTop: 95,
+        paddingBottom: 150,
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
