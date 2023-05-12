@@ -15,5 +15,8 @@ export const { styled, globalCss, keyframes, getCssText, theme } = createStitche
             grey200: "#C6C5CE",
             grey100: "#E1E0E7",
         },
+        media: {
+
+        },
     },
 });
