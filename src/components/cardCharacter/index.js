@@ -7,7 +7,7 @@ export function CardCharacter({ image, name, slug }) {
         <StyleCard>
             <Link href={`/character/${slug}`}>
                 <div className="image">
-                    <Image
+                    <Image width="280" height="568"
                         src={image}
                         alt="character"
                     />

@@ -4,7 +4,7 @@ import { ListCharacters } from "../components/home/listCharacters";
 import { SectionHero } from "../components/home/sectionHero";
 import { getPrismicClient } from "../service/prismic";
 
-export default function Home({ dataPage }) {
+export default function Home({ dataPage, characters }) {
 
   useEffect(() => {
 
@@ -15,7 +15,7 @@ export default function Home({ dataPage }) {
     <>
       <PageTitle title={"What If? - Codeboost"} description={"Um projeto desenvolvido no curso Codeboost"} />
       <SectionHero data={dataPage} />
-      <ListCharacters />
+      <ListCharacters data={characters} />
     </>
   );
 }
@@ -23,10 +23,14 @@ export default function Home({ dataPage }) {
 export const getStaticProps = async () => {
   const prismic = getPrismicClient();
 
-  const contentPages = await prismic.getSingle('home')
+  const contentPages = await prismic.getSingle('home');
+
+  const characters = await prismic.getAllByType('character');
+
   return {
     props: {
       dataPage: contentPages.data,
+      characters,
     },
     revalidate: 60,
   };

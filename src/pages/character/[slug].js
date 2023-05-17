@@ -7,7 +7,7 @@ export default function PageCharacter() {
         <>
             <PageTitle title={"What If? - Codeboost"} description={"Um projeto desenvolvido no curso Codeboost"} />
             <SectionHeroCharacter />
-            <ListCharacters />
+            {/* <ListCharacters />*/}
         </>
     )
 }

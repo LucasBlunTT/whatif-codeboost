@@ -13,7 +13,7 @@ const characters = [
     }
 ]
 
-export function ListCharacters() {
+export function ListCharacters({ data }) {
     return (
         <StyleSectionCharacters>
             <Container>
@@ -27,13 +27,13 @@ export function ListCharacters() {
                 </div>
                 <StyleListCharacters>
                     {
-                        characters.map(({ name, image, slug }) => {
+                        data.map(character => {
                             return (
                                 <CardCharacter
-                                    key={name}
-                                    image={image}
-                                    name={name}
-                                    slug={slug}
+                                    key={character.id}
+                                    image={character.data.image_character.url}
+                                    name={character.data.name_character}
+                                    slug={character.data.slug}
                                 />
                             )
                         })
