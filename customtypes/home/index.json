@@ -7,15 +7,24 @@
     "Main": {
       "uid": {
         "type": "UID",
-        "config": { "label": "Id Page", "placeholder": "" }
+        "config": {
+          "label": "Id Page",
+          "placeholder": ""
+        }
       },
       "subtitle_hero": {
         "type": "Text",
-        "config": { "label": "Subtitle Hero", "placeholder": "" }
+        "config": {
+          "label": "Subtitle Hero",
+          "placeholder": ""
+        }
       },
       "title_hero": {
         "type": "Text",
-        "config": { "label": "Title Hero", "placeholder": "" }
+        "config": {
+          "label": "Title Hero",
+          "placeholder": ""
+        }
       },
       "description_hero": {
         "type": "StructuredText",
@@ -28,20 +37,30 @@
       },
       "label_button": {
         "type": "Text",
-        "config": { "label": "Label Button", "placeholder": "" }
+        "config": {
+          "label": "Label Button",
+          "placeholder": ""
+        }
       },
       "url_button": {
         "type": "Link",
-        "config": { "label": "Url Button", "placeholder": "", "select": null }
+        "config": {
+          "label": "URL Button",
+          "placeholder": "",
+          "select": null
+        }
       },
-      "label_trailler": {
+      "label_trailer": {
         "type": "Text",
-        "config": { "label": "Label Trailler", "placeholder": "" }
+        "config": {
+          "label": "Label Trailer",
+          "placeholder": ""
+        }
       },
-      "thumbnail_trailler": {
+      "thumbnail_trailer": {
         "type": "Image",
         "config": {
-          "label": "Thumbnail Trailler",
+          "label": "Thumbnail Trailer",
           "constraint": {},
           "thumbnails": []
         }

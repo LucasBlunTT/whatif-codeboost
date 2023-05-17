@@ -1,29 +1,27 @@
-import { SectionCharacterStyle } from "./styles";
-import { Container } from "../../../styles/global";
-import ImageCharacter from "../../../assets/characterPlus.jpg";
-import Image from "next/image";
+import Image from 'next/image';
+import { Container } from '../../../styles/global';
+import { StyleSectionHeroCharacter } from './styles';
 
 export function SectionHeroCharacter({ data }) {
-    return (
-        <SectionCharacterStyle>
-            <Container>
-                <div className="image">
-                    <Image src={data.character.image_character.url}
-                        width={data.character.image_character.dimensions.width}
-                        height={data.character.image_character.dimensions.height}
-                        alt="Imagem Character" />
-                </div>
-                <div className="info">
-                    <span>A História</span>
-                    <div>
-                        <h1>{data.character.name_character}</h1>
-                        <p>
-                            {data.character.description_character[0].text}
-                        </p>
-                    </div>
-
-                </div>
-            </Container>
-        </SectionCharacterStyle>
-    )
+  return (
+    <StyleSectionHeroCharacter>
+      <Container>
+        <div className="image" data-aos="fade-right">
+          <Image
+            src={data.image_character.url}
+            width={data.image_character.dimensions.width}
+            height={data.image_character.dimensions.height}
+            alt="Image Person"
+          />
+        </div>
+        <div className="info" data-aos="fade-left" data-aos-delay="100">
+          <span>A história</span>
+          <div className="text">
+            <h1 className="title">{data.name_character}</h1>
+            <p className="text">{data.description_character[0].text}</p>
+          </div>
+        </div>
+      </Container>
+    </StyleSectionHeroCharacter>
+  );
 }

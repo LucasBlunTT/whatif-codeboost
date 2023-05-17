@@ -1,49 +1,49 @@
 import { styled } from '../../styles';
 import { Container } from '../../styles/global';
 
-export const StylePageNotFound = styled("section", {
-    marginTop: 96,
+export const StyleSection404 = styled('div', {
+  marginTop: 96,
+  paddingTop: 95,
+  paddingBottom: 150,
 
-    [`${Container}`]: {
-        paddingTop: 95,
-        paddingBottom: 150,
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        borderLeft: "1px solid rgba(255, 255, 255, 0.2)",
-        borderRight: "1px solid rgba(255, 255, 255, 0.2)",
-        h1: {
-            maxWidth: 718,
-            fontWeight: 600,
-            fontSize: "4.9rem",
-            lineHeight: "5.9rem",
-            color: "$white",
-            marginBottom: 24,
-        },
-        p: {
-            textAlign: "center",
-            maxWidth: 641,
-            fontWeight: 400,
-            fontSize: "1.6rem",
-            lineHeight: "2.4rem",
-            color: "$white",
-            marginBottom: 40,
-        },
-        a: {
-            display: "inline-block",
-            fontWeight: 600,
-            fontSize: "1.6rem",
-            lineHeight: "54px",
-            color: "white",
-            padding: "0px 73px",
-            backgroundColor: "$red900",
-            borderRadius: 5,
-            marginBottom: 87,
-            transition: "filter .3s ease",
-            "&:hover": {
-                filter: "brightness(0.8)",
-            },
-        },
-    }
-})
+  [`${Container}`]: {
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column',
+  },
+
+  h1: {
+    fontWeight: 600,
+    fontSize: 49,
+    lineHeight: '59px',
+    marginBottom: 24,
+  },
+
+  p: {
+    width: '100%',
+    maxWidth: 641,
+    margin: '0 auto',
+    fontWeight: 400,
+    fontSize: 16,
+    lineHeight: '24px',
+    color: '$gray400',
+    textAlign: 'center',
+    marginBottom: 40,
+  },
+  a: {
+    display: 'inline-block',
+    lineHeight: '54px',
+    padding: '0 75px',
+    backgroundColor: '$red800',
+    borderRadius: 5,
+    fontWeight: 400,
+    fontSize: 16,
+    color: '#fff',
+    transition: 'all 0.3s ease-in-out',
+    marginBottom: 72,
+
+    '&:hover': {
+      filter: 'brightness(0.8)',
+    },
+  },
+});

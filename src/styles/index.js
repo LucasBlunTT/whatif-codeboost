@@ -1,22 +1,31 @@
-import { createStitches } from "@stitches/react";
+import { createStitches } from '@stitches/react';
 
-export const { styled, globalCss, keyframes, getCssText, theme } = createStitches({
+export const { styled, globalCss, keyframes, getCssText, theme } =
+  createStitches({
     theme: {
-        colors: {
-            red900: "#FF0000",
-            red800: "#FF040D",
-            white: "#FFFFFF",
-            grey900: "#33303E",
-            grey800: "#4E4B59",
-            grey700: "#5F5C6B",
-            grey600: "#7A7786",
-            grey500: "#8C8A97",
-            grey400: "#ACABB7",
-            grey200: "#C6C5CE",
-            grey100: "#E1E0E7",
-        },
-        media: {
-
-        },
+      colors: {
+        red900: '#ff0000',
+        red800: '#ff040d',
+        white: '#ffffff',
+        gray900: '#33303e',
+        gray800: '#4e4b59',
+        gray700: '#5f5c6b',
+        gray600: '#7a7786',
+        gray500: '#8c8a97',
+        gray400: '#acabb7',
+        gray300: '#c6c5ce',
+        gray200: '#e1e0e7',
+      },
     },
-});
+    media: {
+      xxs: '(max-width: 360px)',
+      xs: '(max-width: 414px)',
+      sm: '(max-width: 640px)',
+      md: '(max-width: 768px)',
+      tmd: '(max-width: 828px)',
+      mmd: '(max-width: 960px)',
+      lg: '(max-width: 1024px)',
+      xl: '(max-width: 1280px)',
+      xxl: '(min-width: 1536px)',
+    },
+  });

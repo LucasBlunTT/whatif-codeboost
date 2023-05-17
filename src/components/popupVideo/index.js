@@ -1,17 +1,16 @@
-import Image from "next/image";
-import { StylePopupVideo } from "./styles";
-
-import IconPlay from "../../assets/play.svg"
+import Image from 'next/image';
+import { PopupVideoStyle } from './styles';
+import IconPlay from '../../assets/play.svg';
 
 export function PopupVideo({ label, thumb }) {
-    return (
-        <StylePopupVideo>
-            <span>{label}</span>
-            <button style={{ background: `url(${thumb}) no-repeat center center`, }}>
-                <div>
-                    <Image src={IconPlay} alt="Icon Play" />
-                </div>
-            </button>
-        </StylePopupVideo>
-    )
-};
+  return (
+    <PopupVideoStyle data-aos="fade-right" data-aos-delay="100">
+      <span>{label}</span>
+      <button style={{ background: `url(${thumb})` }}>
+        <div>
+          <Image src={IconPlay} alt="Icon play" />
+        </div>
+      </button>
+    </PopupVideoStyle>
+  );
+}

@@ -1,64 +1,111 @@
 import { styled } from '../../../styles';
 import { Container } from '../../../styles/global';
 
-export const SectionCharacterStyle = styled("section", {
-    marginTop: "9.8rem",
-    height: 631,
-    borderBottom: "1px solid rgba(255, 255, 255, 0.2)",
-    [`${Container}`]: {
-    display: "flex",
-    alignItems: "center",
-    height: "100%",
-    borderLeft: "1px solid rgba(255, 255, 255, 0.2)",
-    borderRight: "1px solid rgba(255, 255, 255, 0.2)",
-},
-    ".image": {
-    borderRadius: "5px",
-    overflow: "hidden",
-    height: "100%",
-},
-    ".info": {
+export const StyleSectionHeroCharacter = styled('div', {
+  marginTop: 96,
+  height: 631,
+  borderBottom: '1px solid rgba(255,255,255, 0.2)',
+
+  '@mmd': {
+    height: 'unset',
+  },
+
+  [`${Container}`]: {
+    position: 'relative',
+    display: 'flex',
+    alignItems: 'center',
+    gap: 32,
+
+    '@md': {
+      flexDirection: 'column',
+    },
+
+    '&:before': {
+      position: 'absolute',
+      content: '',
+      top: 0,
+      right: 16,
+      height: '100%',
+      width: 1,
+      backgroundColor: 'rgba(255,255,255, 0.2)',
+    },
+  },
+  '.image': {
+    width: '100%',
+    height: '100%',
+    maxWidth: 486,
+    overflow: 'hidden',
+    borderLeft: '1px solid rgba(255,255,255, 0.2)',
+
+    '@mmd': {
+      maxWidth: '35rem',
+    },
+    img: {
+      borderRadius: 5,
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+    },
+  },
+  '.info': {
     flex: 1,
-    maxWidth: 650,
-    marginLeft: 32,
-    display: "flex",
+    display: 'flex',
+
+    '@sm': {
+      gap: '1.4rem',
+      flexDirection: 'column',
+    },
+
     span: {
-        display: "block",
-        marginTop: 20,
+      position: 'relative',
+      fontWeight: 400,
+      fontSize: 18,
+      lineHeight: '27px',
+      color: '#acabc299',
+      paddingRight: 19,
+      marginRight: 22,
+      marginTop: 20,
+
+      '&:before': {
+        content: '',
+        position: 'absolute',
+        top: -7,
+        right: 0,
+        width: 4,
+        height: 46,
+        backgroundColor: '$red800',
+      },
+    },
+
+    '.text': {
+      width: '100%',
+      maxWidth: 520,
+      flex: 1,
+
+      h1: {
+        fontWeight: 600,
+        fontSize: 61,
+        lineHeight: '71px',
+        color: '$white',
+        marginBottom: 13,
+
+        '@xs': {
+          fontSize: 48,
+          lineHeight: '56px',
+        },
+      },
+      p: {
+        width: '100%',
+        maxWidth: 385,
         fontWeight: 400,
-        fontSize: "1.8rem",
-        lineHight: "2.7rem",
-        color: "$gray400",
-        opacity: 0.6,
+        fontSize: 16,
+        lineHeight: '24px',
+        color: '$gray400',
+
+        '@md': {
+          paddingBottom: 48,
+        },
+      },
     },
-    "& > div": {
-        position: "relative",
-        flex: 1,
-        maxWidth: 546,
-        paddingLeft: 24,
-        marginLeft: 19,
-        "&:before": {
-            content: "",
-            position: "absolute",
-            top: 12,
-            left: 0,
-            width: 4,
-            height: 46,
-            backgroundColor: "$red800"
-        },
-        h1: {
-            fontWeight: 600,
-            fontSize: "6.1rem",
-            lineHeight: "7.1rem",
-            color: "$white",
-            marginBottom: 13,
-        },
-        p: {
-            fontWeight: 400,
-            fontSize: "1.6rem",
-            lineHight: "2.4rem",
-            color: "$gray400",
-        },
-    },
-},
-})
+  },
+});
