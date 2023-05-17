@@ -3,13 +3,19 @@ import { SectionHeroCharacter } from "../../components/details/sectionHeroCharac
 import { ListCharacters } from "../../components/home/listCharacters";
 import { getPrismicClient } from "../../service/prismic";
 
-export default function PageCharacter(character) {
-
+export default function PageCharacter(character, characters) {
+    console.log(characters)
+    
     return (
         <>
             <PageTitle title={"What If? - Codeboost"} description={"Um projeto desenvolvido no curso Codeboost"} />
-            <SectionHeroCharacter data={character} />
-            {/* <ListCharacters />*/}
+            {
+                character && <SectionHeroCharacter data={character} />
+            }
+
+            {
+                /*characters && <ListCharacters data={characters} />*/
+            }
         </>
     )
 }
@@ -40,9 +46,18 @@ export const getStaticProps = async (context) => {
         return data.slug === context.params.slug
     })
 
+    characters.splice(
+        characters.findIndex((e) => {
+            return e.data.slug === character.data.slug
+        }),
+        1);
+
+    console.log(characters)
+
     return {
         props: {
             character: character.data,
+            characters
         },
     };
 }
