@@ -1,4 +1,4 @@
-# Ricky and Morty REACT
+# What If REACT / NEXT.JS
 
 ## 📷 Screenshot
 ![image](https://github.com/LucasBlunTT/whatif-codeboost/assets/83377646/3097c995-debe-4f3b-a8b4-f4567f8c9e82)
