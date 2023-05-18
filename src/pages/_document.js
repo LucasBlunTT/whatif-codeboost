@@ -28,14 +28,14 @@ export default function Document() {
         <meta property="og:url" content="https://whatif-codeboost-iota.vercel.app/" />
         <meta property="og:title" content="Marvel's WHAT IF... ?" />
         <meta property="og:description" content="Um projeto desenvolvido no curso codeboost" />
-        <meta property="og:image" content="" />
+        <meta property="og:image" content="../../public/meta.png" />
 
 
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://whatif-codeboost-iota.vercel.app/" />
         <meta property="twitter:title" content="Marvel's WHAT IF... ?" />
         <meta property="twitter:description" content="Um projeto desenvolvido no curso codeboost" />
-        <meta property="twitter:image" content="" />
+        <meta property="og:image" content="../../public/meta.png" />
       </Head>
       <body>
         <Main />
