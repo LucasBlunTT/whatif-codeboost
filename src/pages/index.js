@@ -1,5 +1,5 @@
-import { ListCharacters } from '../components/Home/ListCharacters';
-import { SectionHero } from '../components/Home/sectionHero';
+import { ListCharacters } from '../components/home/ListCharacters';
+import { SectionHero } from '../components/home/SectionHero';
 import { PageTitle } from '../components/PageTitle';
 import { getPrismicClient } from '../service/prismic';
 

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
-import { SectionHeroCharacter } from '../../components/Details/SectionHeroCharacter';
-import { ListCharacters } from '../../components/Home/ListCharacters';
+import { SectionHeroCharacter } from '../../components/details/SectionHeroCharacter';
+import { ListCharacters } from '../../components/home/ListCharacters';
 import { PageTitle } from '../../components/PageTitle';
 import { getPrismicClient } from '../../service/prismic';
 
